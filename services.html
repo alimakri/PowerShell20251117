@@ -1,0 +1,1651 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Services Windows</title>
+<style>
+    body { font-family: Segoe UI, Arial, sans-serif; margin: 24px; background: #fafafa; color: #222; }
+    h1 { font-size: 20px; margin-bottom: 12px; }
+    table { border-collapse: collapse; width: 100%; background: white; }
+    th, td { padding: 8px 10px; border-bottom: 1px solid #e5e5e5; text-align: left; }
+    th { background: #f0f3f7; font-weight: 600; }
+    tr.running  { background: #eaffea; color: #1a7f1a; }   /* vert doux */
+    tr.stopped  { background: #ffecec; color: #a30000; }   /* rouge doux */
+    tr.other    { background: #fff9e6; color: #8a6d00; }   /* jaune doux */
+    .legend { margin: 12px 0 20px; font-size: 13px; }
+    .badge { display: inline-block; padding: 3px 8px; border-radius: 10px; margin-right: 8px; }
+    .badge.running { background: #eaffea; color: #1a7f1a; border: 1px solid #cdeccd; }
+    .badge.stopped { background: #ffecec; color: #a30000; border: 1px solid #f5c2c2; }
+    .badge.other   { background: #fff9e6; color: #8a6d00; border: 1px solid #f3e1a6; }
+</style>
+</head>
+<body>
+<h1>Services Windows</h1>
+<div class="legend">
+    <span class="badge running">Running</span>
+    <span class="badge stopped">Stopped</span>
+    <span class="badge other">Autres états</span>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>DisplayName</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="stopped">
+        <td>AarSvc_3517e377</td>
+        <td>Agent Activation Runtime_3517e377</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>ADPSvc</td>
+        <td>ADPSvc</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>ALG</td>
+        <td>Service de la passerelle de la couche Application</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>AppHostSvc</td>
+        <td>Application Host Helper Service</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>AppIDSvc</td>
+        <td>Identité de l’application</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>Appinfo</td>
+        <td>Informations d’application</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>AppMgmt</td>
+        <td>Gestion d’applications</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>AppReadiness</td>
+        <td>Préparation des applications</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>AppVClient</td>
+        <td>Microsoft App-V Client</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>AppXSvc</td>
+        <td>Service de déploiement AppX (AppXSVC)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>ApxSvc</td>
+        <td>Service proxy de périphérique audio virtuel Windows</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>aspnet_state</td>
+        <td>ASP.NET State Service</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>AssignedAccessManagerSvc</td>
+        <td>Service AssignedAccessManager</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>AudioEndpointBuilder</td>
+        <td>Générateur de points de terminaison du service Audio Windows</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>Audiosrv</td>
+        <td>Audio Windows</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>autotimesvc</td>
+        <td>Heure cellulaire</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>AxInstSV</td>
+        <td>Programme d’installation ActiveX (AxInstSV)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>BcastDVRUserService_3517e377</td>
+        <td>Service utilisateur de diffusion et GameDVR_3517e377</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>BDESVC</td>
+        <td>Service de chiffrement de lecteur BitLocker</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>BFE</td>
+        <td>Moteur de filtrage de base</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>BITS</td>
+        <td>Service de transfert intelligent en arrière-plan</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>BluetoothUserService_3517e377</td>
+        <td>Service de support des utilisateurs du Bluetooth_3517e377</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>brave</td>
+        <td>Service Brave Update (brave)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>BraveElevationService</td>
+        <td>Brave Elevation Service (BraveElevationService)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>bravem</td>
+        <td>Service Brave Update (bravem)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>BrokerInfrastructure</td>
+        <td>Service d’infrastructure des tâches en arrière-plan</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>BTAGService</td>
+        <td>Service de passerelle audio Bluetooth</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>BthAvctpSvc</td>
+        <td>Service AVCTP</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>bthserv</td>
+        <td>Service de prise en charge Bluetooth</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>camsvc</td>
+        <td>Service Gestionnaire d’accès aux fonctionnalités</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>CaptureService_3517e377</td>
+        <td>CaptureService_3517e377</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>cbdhsvc_3517e377</td>
+        <td>Service utilisateur du Presse-papiers_3517e377</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>CDPSvc</td>
+        <td>Service de plateforme des appareils connectés</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>CDPUserSvc_3517e377</td>
+        <td>Service pour utilisateur de plateforme d’appareils connectés_3517e377</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>CertPropSvc</td>
+        <td>Propagation du certificat</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>ClickToRunSvc</td>
+        <td>Microsoft Office Click-to-Run Service</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>ClipSVC</td>
+        <td>Service de licences de client (ClipSVC)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>CloudBackupRestoreSvc_3517e377</td>
+        <td>Service de restauration et de sauvegarde dans le cloud_3517e377</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>cloudidsvc</td>
+        <td>Service d’identité de Microsoft Cloud</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>COMSysApp</td>
+        <td>Application système COM+</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>ConsentUxUserSvc_3517e377</td>
+        <td>Service utilisateur ConsentUX_3517e377</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>CoreMessagingRegistrar</td>
+        <td>CoreMessaging</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>cplspcon</td>
+        <td>Intel(R) Content Protection HDCP Service</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>CredentialEnrollmentManagerUserSvc_3517e377</td>
+        <td>CredentialEnrollmentManagerUserSvc_3517e377</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>CryptSvc</td>
+        <td>Services de chiffrement</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>CscService</td>
+        <td>Fichiers hors connexion</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>DcomLaunch</td>
+        <td>Lanceur de processus serveur DCOM</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>dcsvc</td>
+        <td>Service de configuration (DC) déclaré</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>defragsvc</td>
+        <td>Optimiser les lecteurs</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>Dell SupportAssist Remediation</td>
+        <td>Dell SupportAssist Remediation</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>DellClientManagementService</td>
+        <td>Dell Client Management Service</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>DellTechHub</td>
+        <td>Dell TechHub</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>DeviceAssociationBrokerSvc_3517e377</td>
+        <td>DeviceAssociationBroker_3517e377</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>DeviceAssociationService</td>
+        <td>Service d’association de périphérique</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>DeviceInstall</td>
+        <td>Service d’installation de périphérique</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>DevicePickerUserSvc_3517e377</td>
+        <td>DevicePicker_3517e377</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>DevicesFlowUserSvc_3517e377</td>
+        <td>Flux d’appareils_3517e377</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>DevQueryBroker</td>
+        <td>Service Broker de découverte en arrière-plan DevQuery</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>Dhcp</td>
+        <td>Client DHCP</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>diagsvc</td>
+        <td>Diagnostic Execution Service</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>DiagTrack</td>
+        <td>Expériences des utilisateurs connectés et télémétrie</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>DialogBlockingService</td>
+        <td>DialogBlockingService</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>DispBrokerDesktopSvc</td>
+        <td>Service de stratégie d'affichage</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>DisplayEnhancementService</td>
+        <td>Service d'amélioration de l'affichage</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>DmEnrollmentSvc</td>
+        <td>Service d'inscription de la gestion des périphériques</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>dmwappushservice</td>
+        <td>Service de routage de messages Push du protocole WAP (Wireless Application Protocol) de gestion des appareils</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>Dnscache</td>
+        <td>Client DNS</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>DoSvc</td>
+        <td>Optimisation de livraison</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>dot3svc</td>
+        <td>Configuration automatique de réseau câblé</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>DPMService</td>
+        <td>Dell Peripheral Manager Service</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>DPS</td>
+        <td>Service de stratégie de diagnostic</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>dptftcs</td>
+        <td>Intel(R) Dynamic Tuning Technology Telemetry Service</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>DsmSvc</td>
+        <td>Gestionnaire d’installation de périphérique</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>DsSvc</td>
+        <td>Service de partage des données</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>DusmSvc</td>
+        <td>Consommation des données</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>EapHost</td>
+        <td>Protocole EAP (Extensible Authentication Protocol)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>edgeupdate</td>
+        <td>Microsoft Edge Update Service (edgeupdate)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>edgeupdatem</td>
+        <td>Microsoft Edge Update Service (edgeupdatem)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>EFS</td>
+        <td>Système de fichiers EFS (Encrypting File System)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>embeddedmode</td>
+        <td>Mode incorporé</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>EntAppSvc</td>
+        <td>Service de gestion des applications d'entreprise</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>esifsvc</td>
+        <td>Intel(R) Dynamic Tuning service</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>EventLog</td>
+        <td>Journal d’événements Windows</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>EventSystem</td>
+        <td>Système d’événement COM+</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>Fax</td>
+        <td>Télécopie</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>fdPHost</td>
+        <td>Hôte du fournisseur de découverte de fonctions</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>FDResPub</td>
+        <td>Publication des ressources de découverte de fonctions</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>fhsvc</td>
+        <td>Service d’historique des fichiers</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>FileSyncHelper</td>
+        <td>FileSyncHelper</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>FontCache</td>
+        <td>Service de cache de police Windows</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>FontCache3.0.0.0</td>
+        <td>Cache de police de Windows Presentation Foundation 3.0.0.0</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>FrameServer</td>
+        <td>Serveur de trame de la Caméra Windows</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>FrameServerMonitor</td>
+        <td>Moniteur de serveur de trame Caméra Windows</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>GameInputSvc</td>
+        <td>GameInput Service</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>GoogleChromeElevationService</td>
+        <td>Google Chrome Elevation Service (GoogleChromeElevationService)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>GoogleUpdaterInternalService143.0.7482.0</td>
+        <td>Service interne de mise à jour Google (GoogleUpdaterInternalService143.0.7482.0)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>GoogleUpdaterService143.0.7482.0</td>
+        <td>Service de mise à jour Google (GoogleUpdaterService143.0.7482.0)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>gpsvc</td>
+        <td>Client de stratégie de groupe</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>GraphicsPerfSvc</td>
+        <td>GraphicsPerfSvc</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>gupdate</td>
+        <td>Service Google Update (gupdate)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>gupdatem</td>
+        <td>Service Google Update (gupdatem)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>hidserv</td>
+        <td>Service du périphérique d’interface utilisateur</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>hostcontrolsvc</td>
+        <td>Credential Vault Host Control Service</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>hoststoragesvc</td>
+        <td>Credential Vault Host Storage</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>HP LaserJet Service</td>
+        <td>HP LaserJet Service</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>hpatchmon</td>
+        <td>Hotpatch Monitoring Service</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>HPSIService</td>
+        <td>HP SI Service</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>HvHost</td>
+        <td>Service d'hôte HV</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>icssvc</td>
+        <td>Service Point d'accès sans fil mobile Windows</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>IKEEXT</td>
+        <td>Modules de génération de clés IKE et AuthIP</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>InstallService</td>
+        <td>Installation du service Microsoft Store</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>Intel(R) Platform License Manager Service</td>
+        <td>Intel(R) Platform License Manager Service</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>IntelAudioService</td>
+        <td>Intel(R) Audio Service</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>IntelCstService</td>
+        <td>Intel(R) Context Sensing Technology Service</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>IntelGraphicsSoftwareService</td>
+        <td>Intel® Graphics Software</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>InventorySvc</td>
+        <td>Service d’Appraisal inventaire et compatibilité</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>ipfsvc</td>
+        <td>Intel(R) Innovation Platform Framework Service</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>iphlpsvc</td>
+        <td>Assistance IP</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>IpxlatCfgSvc</td>
+        <td>Service de configuration de conversion IP</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>jhi_service</td>
+        <td>Intel(R) Dynamic Application Loader Host Interface Service</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>KeyIso</td>
+        <td>Isolation de clé CNG</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>KtmRm</td>
+        <td>Service KtmRm pour Distributed Transaction Coordinator</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>LanmanServer</td>
+        <td>Serveur</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>LanmanWorkstation</td>
+        <td>Station de travail</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>lfsvc</td>
+        <td>Service de géolocalisation</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>LicenseManager</td>
+        <td>Serveur Gestionnaire de licences Windows</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>lltdsvc</td>
+        <td>Mappage de découverte de topologie de la couche de liaison</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>lmhosts</td>
+        <td>Assistance NetBIOS sur TCP/IP</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>LMS</td>
+        <td>Intel(R) Management and Security Application Local Management Service</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>LocalKdc</td>
+        <td>Centre local de distribution de clés Kerberos</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>LSM</td>
+        <td>Gestionnaire de session locale</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>LxpSvc</td>
+        <td>Service d'expérience linguistique</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>MapsBroker</td>
+        <td>Gestionnaire des cartes téléchargées</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>McmSvc</td>
+        <td>Service de gestion de la connectivité mobile</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>McpManagementService</td>
+        <td>McpManagementService</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>MDCoreSvc</td>
+        <td>Microsoft Defender Service de base</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>MessagingService_3517e377</td>
+        <td>MessagingService_3517e377</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>MicrosoftEdgeElevationService</td>
+        <td>Microsoft Edge Elevation Service (MicrosoftEdgeElevationService)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>midisrv</td>
+        <td>Service MIDI de Windows</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>MozillaMaintenance</td>
+        <td>Mozilla Maintenance Service</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>mpssvc</td>
+        <td>Pare-feu Windows Defender</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>MSDTC</td>
+        <td>Coordinateur de transactions distribuées</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>MSiSCSI</td>
+        <td>Service Initiateur iSCSI de Microsoft</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>msiserver</td>
+        <td>Windows Installer</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>MsKeyboardFilter</td>
+        <td>Filtre clavier Microsoft</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>MSSQL$SQLEXPRESS</td>
+        <td>SQL Server (SQLEXPRESS)</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>NaturalAuthentication</td>
+        <td>Authentification naturelle</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>NcaSvc</td>
+        <td>Assistant Connectivité réseau</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>NcbService</td>
+        <td>Service Broker pour les connexions réseau</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>NcdAutoSetup</td>
+        <td>Configuration automatique des périphériques connectés au réseau</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>Netlogon</td>
+        <td>Netlogon</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>Netman</td>
+        <td>Connexions réseau</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>netprofm</td>
+        <td>Service Liste des réseaux</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>NetSetupSvc</td>
+        <td>Service Configuration du réseau</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>NetTcpPortSharing</td>
+        <td>Service de partage de ports Net.Tcp</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>NgcCtnrSvc</td>
+        <td>Conteneur Microsoft Passport</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>NgcSvc</td>
+        <td>Microsoft Passport</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>NlaSvc</td>
+        <td>Connaissance des emplacements réseau</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>NPSMSvc_3517e377</td>
+        <td>Lecture en cours du service du Responsable de la session_3517e377</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>nsi</td>
+        <td>Service Interface du magasin réseau</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>NVDisplay.ContainerLocalSystem</td>
+        <td>NVIDIA Display Container LS</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>NVWMI</td>
+        <td>NVWMI</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>OneDrive Updater Service</td>
+        <td>OneDrive Updater Service</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>OneSyncSvc_3517e377</td>
+        <td>Hôte de synchronisation_3517e377</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>P9RdrService_3517e377</td>
+        <td>P9RdrService_3517e377</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>PcaSvc</td>
+        <td>Service de l’Assistant Compatibilité des programmes</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>PeerDistSvc</td>
+        <td>BranchCache</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>PenService_3517e377</td>
+        <td>PenService_3517e377</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>perceptionsimulation</td>
+        <td>Service de simulation de perception Windows</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>PerfHost</td>
+        <td>Hôte de DLL de compteur de performance</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>PhoneSvc</td>
+        <td>Service téléphonique</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>PimIndexMaintenanceSvc_3517e377</td>
+        <td>Données de contacts_3517e377</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>pla</td>
+        <td>Journaux & alertes de performance</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>PlugPlay</td>
+        <td>Plug-and-Play</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>PolicyAgent</td>
+        <td>Agent de stratégie IPsec</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>Power</td>
+        <td>Alimentation</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>PrintDeviceConfigurationService</td>
+        <td>Service de configuration du périphérique d’impression</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>PrintNotify</td>
+        <td>Extensions et notifications d’imprimante</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>PrintScanBrokerService</td>
+        <td>PrintScanBrokerService</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>PrintWorkflowUserSvc_3517e377</td>
+        <td>PrintWorkflow_3517e377</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>ProfSvc</td>
+        <td>Service de profil utilisateur</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>ProIntelliMouseNotificationService</td>
+        <td>Pro IntelliMouse Notification Service</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>PushToInstall</td>
+        <td>Service PushToInstall de Windows</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>QWAVE</td>
+        <td>Expérience audio-vidéo haute qualité Windows</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>RasAuto</td>
+        <td>Gestionnaire des connexions automatiques d’accès à distance</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>RasMan</td>
+        <td>Gestionnaire des connexions d’accès à distance</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>refsdedupsvc</td>
+        <td>Service de déduplication ReFS</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>RemoteAccess</td>
+        <td>Routage et accès distant</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>RemoteRegistry</td>
+        <td>Registre à distance</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>RetailDemo</td>
+        <td>Service de démo du magasin</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>RFIDAgentServiceAutonome</td>
+        <td>RFIDAgentServiceAutonome</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>RmSvc</td>
+        <td>Service de gestion radio</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>RpcEptMapper</td>
+        <td>Mappeur de point de terminaison RPC</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>RpcLocator</td>
+        <td>Localisateur d’appels de procédure distante (RPC)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>RpcSs</td>
+        <td>Appel de procédure distante (RPC)</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>RstMwService</td>
+        <td>Intel(R) Storage Middleware Service</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>RtkAudioUniversalService</td>
+        <td>Realtek Audio Universal Service</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>SamSs</td>
+        <td>Gestionnaire de comptes de sécurité</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>SCardSvr</td>
+        <td>Carte à puce</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>ScDeviceEnum</td>
+        <td>Service d’énumération de périphériques de carte à puce</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>Schedule</td>
+        <td>Planificateur de tâches</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>SCPolicySvc</td>
+        <td>Stratégie de retrait de la carte à puce</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>SDRSVC</td>
+        <td>Sauvegarde Windows</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>seclogon</td>
+        <td>Ouverture de session secondaire</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>SecurityHealthService</td>
+        <td>Service Sécurité Windows</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>SEMgrSvc</td>
+        <td>Gestionnaires des paiements et des éléments sécurisés NFC</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>SENS</td>
+        <td>Service de notification d’événements système</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>Sense</td>
+        <td>Sense</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>SensorDataService</td>
+        <td>Service Données de capteur</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>SensorService</td>
+        <td>Service de capteur</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>SensrSvc</td>
+        <td>Service de surveillance des capteurs</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>SessionEnv</td>
+        <td>Configuration des services Bureau à distance</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>SharedAccess</td>
+        <td>Partage de connexion Internet (ICS)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>ShellHWDetection</td>
+        <td>Détection matériel noyau</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>shpamsvc</td>
+        <td>Shared PC Account Manager</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>smphost</td>
+        <td>SMP de l’Espace de stockages Microsoft</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>SmsRouter</td>
+        <td>Service Routeur SMS Microsoft Windows.</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>SNMPTrap</td>
+        <td>Interruption SNMP</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>Spooler</td>
+        <td>Spouleur d’impression</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>sppsvc</td>
+        <td>Protection logicielle</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>SQLAgent$SQLEXPRESS</td>
+        <td>SQL Server Agent (SQLEXPRESS)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>SQLBrowser</td>
+        <td>SQL Server Browser</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>SQLTELEMETRY$SQLEXPRESS</td>
+        <td>SQL Server CEIP service (SQLEXPRESS)</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>SQLWriter</td>
+        <td>Enregistreur VSS SQL Server</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>SSDPSRV</td>
+        <td>Découverte SSDP</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>ssh-agent</td>
+        <td>OpenSSH Authentication Agent</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>SstpSvc</td>
+        <td>Service SSTP (Secure Socket Tunneling Protocol)</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>StateRepository</td>
+        <td>Service State Repository (StateRepository)</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>StiSvc</td>
+        <td>Acquisition d’image Windows (WIA)</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>StorSvc</td>
+        <td>Service de stockage</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>svsvc</td>
+        <td>Vérificateur de points</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>swprv</td>
+        <td>Fournisseur de cliché instantané de logiciel Microsoft</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>SysMain</td>
+        <td>SysMain</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>SystemEventsBroker</td>
+        <td>Service Broker des événements système</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>TapiSrv</td>
+        <td>Téléphonie</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>TbtP2pShortcutService</td>
+        <td>Thunderbolt(TM) Peer to Peer Shortcut</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>TermService</td>
+        <td>Services Bureau à distance</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>TextInputManagementService</td>
+        <td>Service de gestion des entrées de texte</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>Themes</td>
+        <td>Thèmes</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>TieringEngineService</td>
+        <td>Gestion des niveaux de stockage</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>TimeBrokerSvc</td>
+        <td>Service Broker pour les événements horaires</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>TokenBroker</td>
+        <td>Gestionnaire de comptes web</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>TrkWks</td>
+        <td>Client de suivi de lien distribué</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>TroubleshootingSvc</td>
+        <td>Service de résolution des problèmes recommandé</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>TrustedInstaller</td>
+        <td>Programme d’installation pour les modules Windows</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>tzautoupdate</td>
+        <td>Programme de mise à jour automatique du fuseau horaire</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>UdkUserSvc_3517e377</td>
+        <td>Service utilisateur du kit de développement sans station d’accueil_3517e377</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>UevAgentService</td>
+        <td>Service User Experience Virtualization</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>UmRdpService</td>
+        <td>Redirecteur de port du mode utilisateur des services Bureau à distance</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>UnistoreSvc_3517e377</td>
+        <td>Stockage des données utilisateur_3517e377</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>upnphost</td>
+        <td>Hôte de périphérique UPnP</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>UserDataSvc_3517e377</td>
+        <td>Accès aux données utilisateur_3517e377</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>UserManager</td>
+        <td>Gestionnaire des utilisateurs</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>ushupgradesvc</td>
+        <td>Credential Vault Upgrade Service</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>UsoSvc</td>
+        <td>Service Orchestrator pour les mises à jour</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>VaultSvc</td>
+        <td>Gestionnaire d’informations d’identification</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>vds</td>
+        <td>Disque virtuel</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>vmicguestinterface</td>
+        <td>Interface de services d’invité Hyper-V</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>vmicheartbeat</td>
+        <td>Service Pulsation Microsoft Hyper-V</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>vmickvpexchange</td>
+        <td>Service Échange de données Microsoft Hyper-V</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>vmicrdv</td>
+        <td>Service de virtualisation Bureau à distance Hyper-V</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>vmicshutdown</td>
+        <td>Service Arrêt de l’invité Microsoft Hyper-V</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>vmictimesync</td>
+        <td>Service Synchronisation date/heure Microsoft Hyper-V</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>vmicvmsession</td>
+        <td>Service Hyper-V PowerShell Direct</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>vmicvss</td>
+        <td>Requête du service VSS Hyper-V</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>VSInstallerElevationService</td>
+        <td>Visual Studio Installer Elevation Service</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>VSS</td>
+        <td>Cliché instantané des volumes</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>VSStandardCollectorService150</td>
+        <td>Visual Studio Standard Collector Service 150</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>W32Time</td>
+        <td>Temps Windows</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>w3logsvc</td>
+        <td>Service de journalisation W3C</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>W3SVC</td>
+        <td>Service de publication World Wide Web</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>WaaSMedicSvc</td>
+        <td>WaaSMedicSvc</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>WalletService</td>
+        <td>WalletService</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>WarpJITSvc</td>
+        <td>Warp JIT Service</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>WAS</td>
+        <td>Service d'activation des processus Windows</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>WavesAudioService</td>
+        <td>Waves Audio Universal Services</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>WavesSysSvc</td>
+        <td>Waves Audio Services</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>wbengine</td>
+        <td>Service de moteur de sauvegarde en mode bloc</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>WbioSrvc</td>
+        <td>Service de biométrie Windows</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>Wcmsvc</td>
+        <td>Gestionnaire des connexions Windows</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>wcncsvc</td>
+        <td>Windows Connect Now - Registre de configuration</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>WdiServiceHost</td>
+        <td>Service hôte WDIServiceHost</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>WdiSystemHost</td>
+        <td>Hôte système de diagnostics</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>WdNisSvc</td>
+        <td>Service d’inspection réseau de l’antivirus Microsoft Defender</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>WebClient</td>
+        <td>WebClient</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>webthreatdefsvc</td>
+        <td>Service Web Threat Defense</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>webthreatdefusersvc_3517e377</td>
+        <td>Service d’utilisateur Web Threat Defense_3517e377</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>Wecsvc</td>
+        <td>Collecteur d’événements de Windows</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>WEPHOSTSVC</td>
+        <td>Service hôte du fournisseur de chiffrement Windows</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>wercplsupport</td>
+        <td>Prise en charge du Panneau de configuration Rapports de problèmes</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>WerSvc</td>
+        <td>Service de rapport d’erreurs Windows</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>WFDSConMgrSvc</td>
+        <td>Service Wi-Fi Direct Service de gestionnaire de connexions</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>whesvc</td>
+        <td>Intégrité de Windows et expériences optimisées</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>WiaRpc</td>
+        <td>Événements d’acquisition d’images fixes</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>WinDefend</td>
+        <td>Service antivirus Microsoft Defender</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>WinHttpAutoProxySvc</td>
+        <td>Service de découverte automatique de Proxy Web pour les services HTTP Windows</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>Winmgmt</td>
+        <td>Infrastructure de gestion Windows</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>WinRM</td>
+        <td>Gestion à distance de Windows (Gestion WSM)</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>wisvc</td>
+        <td>Service Windows Insider</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>WlanSvc</td>
+        <td>Service de configuration automatique WLAN</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>wlidsvc</td>
+        <td>Assistant Connexion avec un compte Microsoft</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>wlpasvc</td>
+        <td>Service de l’Assistant de profil local</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>WManSvc</td>
+        <td>Service de gestion de Windows</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>wmiApSrv</td>
+        <td>Carte de performance WMI</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>WMIRegistrationService</td>
+        <td>Intel(R) Management Engine WMI Provider Registration</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>WMPNetworkSvc</td>
+        <td>Service de partage réseau du Lecteur multimédia Windows</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>workfolderssvc</td>
+        <td>Dossiers de travail</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>WpcMonSvc</td>
+        <td>Contrôle parental</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>WPDBusEnum</td>
+        <td>Service Énumérateur d’appareil mobile</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="running">
+        <td>WpnService</td>
+        <td>Service du système de notifications Push Windows</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>WpnUserService_3517e377</td>
+        <td>Service utilisateur de notifications Push Windows_3517e377</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>WSAIFabricSvc</td>
+        <td>WSAIFabricSvc</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>wscsvc</td>
+        <td>Centre de sécurité</td>
+        <td>Running</td>
+    </tr>
+<tr class="running">
+        <td>WSearch</td>
+        <td>Windows Search</td>
+        <td>Running</td>
+    </tr>
+<tr class="stopped">
+        <td>wuauserv</td>
+        <td>Windows Update</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>wuqisvc</td>
+        <td>Informations sur l’utilisation et la qualité de Microsoft</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>WwanSvc</td>
+        <td>Service de configuration automatique WWAN</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>XblAuthManager</td>
+        <td>Gestionnaire d'authentification Xbox Live</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>XblGameSave</td>
+        <td>Jeu sauvegardé sur Xbox Live</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>XboxGipSvc</td>
+        <td>Xbox Accessory Management Service</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>XboxNetApiSvc</td>
+        <td>Service de mise en réseau Xbox Live</td>
+        <td>Stopped</td>
+    </tr>
+<tr class="stopped">
+        <td>ZTHELPER</td>
+        <td>Service d’assistance ZTDNS</td>
+        <td>Stopped</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
