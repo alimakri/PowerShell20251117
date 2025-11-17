@@ -1,0 +1,4 @@
+#TYPE Selected.System.ServiceProcess.ServiceController
+"Name";"DisplayName"
+"AdobeARMservice";"Adobe Acrobat Update Service"
+"AJRouter";"Service de routeur AllJoyn"

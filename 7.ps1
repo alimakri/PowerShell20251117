@@ -1,0 +1,61 @@
+﻿$nombreADeviner = Get-Random -Minimum 1 -Maximum 100
+# Write-Host $nombreADeviner -ForegroundColor Red
+$proposition = 0
+$maxCoup = 7
+$nombreCoup = 0
+$FinDePartie = $false
+$resultat = -3
+
+while(-not $FinDePartie)
+{
+    Write-Host "faites une proposition:"
+    $nombreCoup++
+    $proposition = Read-Host 
+    if ($nombreCoup -ge $maxCoup)
+    {
+        $resultat = -2
+    }
+    elseif ($proposition -lt $nombreADeviner)
+    {
+        $resultat = -1
+    }
+    elseif ($proposition -gt $nombreADeviner)
+    {
+        $resultat = 1
+    }
+    else
+    {
+        $resultat = 0
+    }
+
+
+    # if ($resultat -eq -2)
+    # {
+    #    Write-Host "$nombreCoup. Perdu" 
+    #    $FinDePartie = $true
+    # }
+    # elseif ($resultat -eq -1)
+    # {
+    #    Write-Host "$nombreCoup. Trop petit" 
+    # }
+    # elseif ($resultat -eq 1)
+    # {
+    #    Write-Host "$nombreCoup. Trop grand" 
+    # }
+    switch ($resultat) {
+    -2 {
+        Write-Host "$nombreCoup. Perdu"
+        $FinDePartie = $true
+        break
+    }
+    -1 {
+        Write-Host "$nombreCoup. Trop petit"
+        break
+    }
+     1 {
+        Write-Host "$nombreCoup. Trop grand"
+        break
+    }
+}
+
+}
