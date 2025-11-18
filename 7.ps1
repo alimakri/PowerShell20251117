@@ -10,8 +10,14 @@ while(-not $FinDePartie)
 {
     Write-Host "faites une proposition:"
     $nombreCoup++
+    $propInt = 0
     $proposition = Read-Host 
-    if ($nombreCoup -ge $maxCoup)
+    if (-not [int]::TryParse($proposition, [ref]$propInt))
+    {
+        $resultat = -3
+    }
+
+    elseif ($nombreCoup -ge $maxCoup)
     {
         $resultat = -2
     }
@@ -43,6 +49,10 @@ while(-not $FinDePartie)
     #    Write-Host "$nombreCoup. Trop grand" 
     # }
     switch ($resultat) {
+    -3 {
+        Write-Host "Ce n'est pas un nombre"
+        break
+        }
     -2 {
         Write-Host "$nombreCoup. Perdu"
         $FinDePartie = $true

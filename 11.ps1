@@ -19,4 +19,4 @@ while($Reader.Read())
     $nom = $reader["LastName"]
     Write-Host "$id - $prenom - $nom"
 }
-$reader | gm
+$reader.Close()
