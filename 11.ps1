@@ -2,7 +2,7 @@
 # -------------
 # Créer la connexion
 $connection = New-Object System.Data.SqlClient.SqlConnection
-$connection.ConnectionString = "Server=.\SQLEXPRESS;Database=AdventureWorks2022;Integrated Security=True;"
+$connection.ConnectionString = "Server=.\SQLEXPRESS;Database=AdventureWorks2022;Integrated Security=True;" # connectionstring.Com
 $connection.Open()
 
 # Exécuter la commande SQL
